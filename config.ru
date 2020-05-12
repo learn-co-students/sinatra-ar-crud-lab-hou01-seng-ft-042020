@@ -1,5 +1,7 @@
 
 require './config/environment'
+use Rack::MethodOverride
+run ApplicationController
 
 begin
   fi_check_migration
